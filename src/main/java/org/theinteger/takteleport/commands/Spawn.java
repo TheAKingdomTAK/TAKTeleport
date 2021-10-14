@@ -22,6 +22,7 @@ public class Spawn implements CommandExecutor {
         }
         Player p = (Player) sender;
         p.teleport(p.getWorld().getSpawnLocation());
+        p.sendMessage(plugin.getTeleportMessage());
         return true;
     }
 }

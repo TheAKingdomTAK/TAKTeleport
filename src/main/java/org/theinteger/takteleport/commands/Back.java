@@ -25,6 +25,7 @@ public class Back implements CommandExecutor {
             return false;
         }
         p.teleport(plugin.getBackLocation(p));
+        p.sendMessage(plugin.getTeleportMessage());
         return true;
     }
 }
