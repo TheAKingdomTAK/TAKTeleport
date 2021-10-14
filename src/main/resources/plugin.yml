@@ -5,3 +5,10 @@ api-version: 1.17
 authors: [ Ecolipsy, TheAKingdom ]
 description: Teleportation essentials for TheAKingdom.
 website: https://theakingdom.net
+commands:
+  spawn:
+    description: Teleports you to the main location of the server.
+  back:
+    description: Teleports you to the place you were before you teleported or died.
+  setspawn:
+    description: Sets the main location of the server.
