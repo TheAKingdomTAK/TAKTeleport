@@ -16,7 +16,7 @@ public class SetSpawn implements CommandExecutor {
     }
 
     public String getFormatted(Location loc){
-        return "§2X: " + loc.getX() + " Y: " + loc.getY() + " Z: " + loc.getZ();
+        return "§2X: " + Math.round(loc.getX()) + " Y: " + Math.round(loc.getY()) + " Z: " + Math.round(loc.getZ());
     }
 
     @Override
