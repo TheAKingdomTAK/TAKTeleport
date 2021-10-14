@@ -1,0 +1,7 @@
+name: TAKTeleport
+version: ${project.version}
+main: org.theinteger.takteleport.TAKTeleport
+api-version: 1.17
+authors: [ Ecolipsy, TheAKingdom ]
+description: Teleportation essentials for TheAKingdom.
+website: https://theakingdom.net
