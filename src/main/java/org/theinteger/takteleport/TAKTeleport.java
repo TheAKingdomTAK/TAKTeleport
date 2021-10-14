@@ -13,7 +13,7 @@ import java.util.HashMap;
 public final class TAKTeleport extends JavaPlugin {
     String playersOnlyMessage = "§cOnly players can use this command.";
     String permissionMessage = "§cYou don't seem to have permissions to use this TAKTeleport command.";
-    String teleportMessage = "§Whoosh!";
+    String teleportMessage = "§aWhoosh!";
     HashMap<Player, Location> backLocations = new HashMap<>();
 
     public String getPlayersOnlyMessage(){
