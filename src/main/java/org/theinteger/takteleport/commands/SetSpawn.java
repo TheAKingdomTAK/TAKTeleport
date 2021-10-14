@@ -14,6 +14,11 @@ public class SetSpawn implements CommandExecutor {
     public SetSpawn(TAKTeleport takTeleport) {
         plugin = takTeleport;
     }
+
+    public String getFormatted(Location loc){
+        return "§2X: " + loc.getX() + " Y: " + loc.getY() + " Z: " + loc.getZ();
+    }
+
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         if(!(sender instanceof Player)){
@@ -27,7 +32,7 @@ public class SetSpawn implements CommandExecutor {
         }
         Location loc = p.getLocation();
         p.getWorld().setSpawnLocation(loc);
-        p.sendMessage("§aThe spawn of world §2" + p.getWorld().getName() + "§a has been set to §2" + loc.toString() + "§a.");
+        p.sendMessage("§aThe spawn of world §2" + p.getWorld().getName() + "§a has been set to " + getFormatted(loc) + "§a.");
         return true;
     }
 }
